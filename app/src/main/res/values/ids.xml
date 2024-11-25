@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="cardFDBack" type="id" />
+    <item name="buttonDDBack" type="id" />
+    <item name="line_a" type="id" />
+    <item name="line_b" type="id" />
+    <item name="line_c" type="id" />
+    <item name="line_d" type="id" />
+    <item name="line_e" type="id" />
+    <item name="listViewLTCart" type="id" />
+    <item name="buttonLTCartDate" type="id" />
+    <item name="listViewHAD" type="id" />
+</resources>
