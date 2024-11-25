@@ -9,10 +9,13 @@ import androidx.cardview.widget.CardView;
 
 public class FindDoctorActivity extends AppCompatActivity {
 
+    CardView cardView ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_doctor);
+        cardView = findViewById(R.id.cardFDExit);
 
         // CardView for Family Physician
         CardView familyPhysician = findViewById(R.id.cardFDFamilyPhysician);
@@ -33,7 +36,16 @@ public class FindDoctorActivity extends AppCompatActivity {
         // CardView for Cardiologists
         CardView cardiologists = findViewById(R.id.cardFDCardiologists);
         cardiologists.setOnClickListener(view -> openDoctorDetailsActivity("Cardiologists"));
+
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FindDoctorActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
 
     private void openDoctorDetailsActivity(String title) {
         Intent intent = new Intent(FindDoctorActivity.this, DoctorDetailsActivity.class);

@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Lab Test Cart Item"
+        android:text="Health Articles"
         android:textColor="@color/HotPink"
         android:textSize="24sp"
         android:textStyle="bold"
